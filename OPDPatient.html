@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone8.css">
+    <title>OPD Patient</title>
+    <style>
+        #Heading {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #ADD input {
+
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102);
+        }
+
+        #CLEAR input {
+            padding-top: 0px;
+            margin-top: 10px;
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 70px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102)
+        }
+        
+        #PatientId input,
+        #FirstName input,
+        #LastName input,
+        #Age input,
+        #Gender input,
+        #Contact input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+
+        #PatientId,
+        #FirstName,
+        #LastName,
+        #Age,
+        #Gender,
+        #Contact {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit.js" class="OPD">
+        <h1 id="Heading">Add OPD Details</h1>
+        <hr style="color: grey;">
+        <label for="PatientId" id="PatientId">Patient Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="PatientId" placeholder="Eg. 7Y4UR">
+        </label>
+        <label for="ADD" id="ADD">
+            <input type="submit" name="ADD" value="ADD">
+        </label>
+        <br><br>
+        <label for="FirstName" id="FirstName">First name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="FirstName" placeholder="Eg. Ajay">
+        </label>
+        <label for="CLEAR" id="CLEAR">
+            <input type="reset" name="CLEAR" value="CLEAR">
+        </label>
+        <br><br>
+        <label for="LastName" id="LastName">Last name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="LastName" placeholder="Eg. Mehrotra">
+        </label>
+        <br><br>
+        <label for="Age" id="Age">Age &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;
+            <input type="number" name="Age" placeholder="Eg. 23">
+        </label>
+        <br><br>
+        <label for="Gender" id="Gender">Gender &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select id="">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transgender</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label for="Contact" id="Contact">Contact Number &nbsp; &nbsp; &nbsp;
+            <input type="tel" name="Contact" placeholder="Eg. 9876543201">
+        </label>
+    </form>
+</body>
+
+</html>

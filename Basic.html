@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <style>
+        .background {
+            background-image: url(photo1.jpg);
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline;
+            padding: 3px 10px;
+            font-size: 28px;
+            font-family: 'Dancing Script', cursive;
+            color: rgb(99, 96, 96);
+            border-style: solid;
+            border-radius: 13px;
+            border-color: rgb(241, 241, 241);
+            margin-left: 28px;
+            background-color: rgb(230, 225, 205);
+            opacity: 0.8;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(15, 34, 117);
+
+        }
+
+        #Title h1 {
+
+            font-size: 30px;
+            font-family: 'Fredoka One', cursive;
+            padding-left: 20px;
+        }
+
+        #AboutUs {
+            background-color: rgb(156, 154, 154);
+            color: white;
+            font-size: 24px;
+            font-family: 'Noto Serif', serif;
+            margin: 25px 400px 25px 400px;
+            text-align: justify;
+            padding: 13px 25px;
+            border-radius: 18px 50px;
+            opacity: 0.8;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+        }
+
+        #Title img {
+            height: 60px;
+            width: 60px;
+            padding-left: 18px;
+            padding-top: 15px;
+        }
+
+        .Background {
+            background-image: url('photo1.jpg');
+            width: 1508px;
+            height: 1331px;
+        }
+
+        nav p a {
+            text-decoration: none;
+        }
+
+        #Services {
+            align-content: center;
+            text-align: justify;
+            border-style: solid;
+            border-radius: 50px 15px;
+            border-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            margin-left: 400px;
+            margin-right: 400px;
+            font-size: 25px;
+            font-family: 'Pangolin', cursive;
+            background-color: rgb(192, 188, 188);
+            opacity: 0.8;
+        }
+
+        #Label {
+            margin-left: 380px;
+            font-size: 25px;
+            font-family: 'Pangolin', cursive;
+        }
+
+        #INPUT {
+            margin-right: 400px;
+        }
+
+        #Patient {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+        #Name {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+        #Contact {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+        #Address {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 20px 30px;
+            font-size: 15px;
+        }
+
+        #SUBMIT {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 10px 10px;
+            font-size: 15px;
+            margin-left: 520px;
+        }
+
+        #RESET {
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(26, 24, 24);
+            padding: 10px 10px;
+            font-size: 15px;
+
+        }
+
+        #BACKIMAGE {
+            background-image: url('Contact.jpg');
+            width: 1508px;
+            height: 500px;
+        }
+
+        #Zumba {
+            border-radius: 10px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Background">
+        <div id="Title">
+            <img src="Sign.jpg" alt="">
+            <h1 style=" display: inline; font-size: 60px;">St. Josph Hospital</h1>
+
+            <hr>
+        </div>
+        <div>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <a href="Ambulancedetails.html" target="_blank"
+                        style="border-radius: 10px; margin-top: 4px;">Ambulance details</a>
+                    <hr>
+                    <a href="EmergencyTreatment.html" target="_blank" style="border-radius: 10px;">Emergency
+                        Treatment</a>
+                    <hr>
+                    <a href="Employeedetails.html" target="_blank" style="border-radius: 10px;">Employee details</a>
+                    <hr>
+                    <a href="LabTest.html" target="_blank" style="border-radius: 10px;">Lab Test</a>
+                    <hr>
+                    <a href="Medicinedetails.html" target="_blank" style="border-radius: 10px;">Medicine details</a>
+                    <hr>
+                    <a href="OPDPatient.html" target="_blank" style="border-radius: 10px;">OPD Patient</a>
+                    <hr>
+                    <a href="Payroll.html" target="_blank" style="border-radius: 10px;">Payroll</a>
+                    <hr>
+                    <a href="Pharmacy.html" target="_blank" style="border-radius: 10px;">Pharmacy</a>
+                    <hr>
+                    <a href="SampleCollection.html" target="_blank" style="border-radius: 10px;">Sample Collection</a>
+                    <hr>
+                    <a href="Zumba.html" target="_blank" id="Zumba">Zumba</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li style="margin-left: 350px;"><a href="#">Home</a></li>
+                    <li><a href="#AboutUsection">About Us</a></li>
+                    <li><a href="#ServicesSection">Our Services</a></li>
+                    <li><a href="#ContactUssection">Contact Us</a></li>
+                </ul>
+
+                <p
+                    style="display: inline; font-size: 26px; color: rgb(230, 224, 204); margin-left: 1300px; display: inline;">
+                    <a href="SignIn.html" target="_blank">Sign In</a> /</p>
+                <p style="display: inline; font-size: 26px; "><a href="SignIn.html" target="_blank"><a href="LogIn.html"
+                            target="_blank">Log In</a></p>
+
+            </nav>
+        </div>
+
+        <h1 style="font-family: 'Dancing Script', cursive;text-align: center;font-size: 40px; " id="AboutUsection">About
+            Us</h1>
+        <section id="AboutUs">
+
+            <p>St. Josph Hospital,Bareily is situated near the city center, this Multi Specialty hospital provides
+                300
+                beds
+                and a team of highly experienced doctors and support staff. The hospital was the first hospital for
+                women in
+                Asia and was started in the year 1870 by Dr. Clara Swain. The hospital has Sate-Of-the-art equipment
+                and
+                world class facilities with emphasis on excellence in clinical services, diagnostic facilities and
+                research
+                activities. The 350-bedded hospital has dedicated full-time specialists, nurses and paramedics. Our
+                vision
+                is to strengthen healthcare in the communities we serve and also empower our patients to make
+                informed
+                choices. Clara swain Mission Hospital is is a leading, integrated healthcare delivery provider and
+                is
+                driven
+                by the vision of becoming a global leader in the integrated health care delivery space. Our larger
+                purpose
+                is to save and enrich lives though clinical excellence.</p>
+        </section>
+        <h1 style="font-family: 'Dancing Script', cursive;text-align: center;font-size: 40px; margin-top: 50px;"
+            id="ServicesSection">Our Servics
+        </h1>
+        <section id="Services">
+
+            <ul>
+                <li>short-term hospitalization</li>
+                <li>general and specialty surgical </li>
+                <li>MRI Scan</li>
+                <li>x ray/radiology </li>
+                <li>home nursing </li>
+                <li> nutritional counseling</li>
+                <li>mental health care</li>
+                <li> genetic counseling and testing</li>
+            </ul>
+        </section>
+        <div id="BACKIMAGE">
+            <h1 style="font-family: 'Dancing Script', cursive;text-align: center;font-size: 40px; margin-top: 49px; padding-top: 30px;"
+                id="ContactUssection">Contact
+                Us</h1>
+            <section>
+                <form action="#">
+                    <label for="Name" id="Label">
+                        Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="Name">
+                    </label>
+                    <br><br>
+                    <label for="Address" id="Label">
+                        Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="Address">
+                    </label>
+                    <br><br>
+                    <label for="Contact" id="Label"> Contact No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="tel" id="Contact">
+                    </label>
+                    <br><br>
+                    <label for="Name" id="Label"> Patient's Name&nbsp;
+                        <input type="text" id="Patient">
+                    </label>
+                    <br><br>
+                    <label for="SUBMIT">
+                        <input type="submit" value="Submit" id="SUBMIT">
+                    </label>
+                    <label for="RESET">
+                        <input type="reset" value="Reset" id="RESET">
+                    </label>
+
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <body>
+
+</html>

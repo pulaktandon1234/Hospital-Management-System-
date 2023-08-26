@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone7.css">
+    <title>Medicine details</title>
+    <style>
+        #heading {
+            font-size: 35px;
+            text-align: center;
+            font-style: normal;
+
+        }
+
+
+        #ADD input {
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102)
+        }
+
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+
+        #clear input {
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102);
+        }
+
+        #MedicineDesc,
+        #unit,
+        #price,
+        #MedicineId {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+        #MedicineDesc input, #unit input,#price input,#MedicineId input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form class="Medicine" action="Submit.js">
+        <h1 id="heading">Add Medicine Details</h1>
+        <hr style="color: grey;">
+        <label for="MedicineId" id="MedicineId">MedicineId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="MedicineId" placeholder="Eg. EY67U8">
+        </label>
+        <label for="ADD" id="ADD">
+            <input type="submit" name="ADD" placeholder="ADD">
+        </label>
+        <br><br>
+        <label for="MedicineDesc" id="MedicineDesc">
+            Medicine Desc&nbsp;&nbsp;<input type="text" name="MedicineDesc" placeholder="Eg. Therapeutic">
+        </label>
+        <label for="clear" id="clear">
+            <input type="reset" placeholder="CLEAR">
+        </label>
+        <br><br>
+        <label for="unit"
+            id="unit">Unit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label for="price"
+            id="price">Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" name="price" placeholder="Eg. 5">
+        </label>
+        <br>
+        <br>
+
+
+    </form>
+
+</body>
+
+</html>

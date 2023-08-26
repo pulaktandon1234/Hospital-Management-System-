@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone10.css">
+    <title>Pharmacy details</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+            justify-content: center;
+        }
+
+        #Add input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 280px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #Clear input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 300px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #Save input {
+            font-size: 32px;
+            height: 50px;
+            width: 330px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #block {
+            border-style: solid;
+            border-color: rgba(43, 41, 41, 0.966);
+            width: 780px;
+            height: 300px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        #block ul li {
+            border-style: solid;
+            border-color: rgba(43, 41, 41, 0.966);
+            list-style-type: none;
+            display: inline;
+            padding-bottom: 10px;
+            background-color: cyan;
+            border-collapse: collapse;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 10px;
+            color: rgb(219, 65, 65);
+        }
+
+        #Heading {
+            text-align: center;
+        }
+
+        #View input:hover {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        #Reciept input,
+        #OPI input,
+        #Medicine input,
+        #Amount input {
+
+            margin-left: 10px;
+
+            justify-content: center;
+            border-color: white;
+            border-width: none;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            width: 180px;
+            height: 30px;
+        }
+
+        #Reciept,
+        #OPI,
+        #Medicine,
+        #Amount {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js" class="Pharmacy">
+        <h1 id="Heading">Pharmay Reciept</h1>
+        <hr><br>
+        <label for="Reciept" id="Reciept">Reciept Id
+            <input type="text" name="Reciept" placeholder="Eg. UY34RE">
+        </label>
+        <label for="OPI" id="OPI">Reciept Id
+            <input type="text" name="OPI" placeholder="Eg. PE23SD">
+        </label>
+        <hr><br>
+        <label for="Medicine" id="Medicine">Medicine Id
+            <input type="text" name="Medicine" placeholder="Eg. W22I8U">
+        </label>
+        <label for="View" id="View">
+            <input type="button" name="View" value="View List">
+        </label>
+        <br><br>
+        <label for="Amount" id="Amount">Amount
+            <input type="number" name="Amount" placeholder="2000">
+        </label>
+        <label for="Add" id="Add">
+            <input type="submit" name="Add" value="Add">
+        </label>
+        <div id="block">
+            <ul>
+                <li>Medicine Id</li>
+                <li>Description</li>
+                <li>Amount</li>
+                <li>Price</li>
+            </ul>
+        </div>
+        <label for="Clear" id="Clear">
+            <input type="reset" name="Clear" value="Clear">
+        </label>
+        <label for="Save" id="Save">
+            <input type="submit" name="Save" value="Save and Print Invoice">
+        </label>
+    </form>
+</body>
+
+</html>

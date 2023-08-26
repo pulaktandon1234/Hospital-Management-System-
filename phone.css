@@ -1,0 +1,145 @@
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1.5px 5px;
+    font-size: 14px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(99, 96, 96);
+    border-style: solid;
+    border-radius: 7.5px;
+    border-color: rgb(241, 241, 241);
+    margin-left: 14px;
+    background-color: rgb(230, 225, 205);
+    opacity: 0.8;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(15, 34, 117);
+
+}
+
+#Title h1 {
+
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    padding-left: 20px;
+}
+
+#AboutUs {
+    background-color: rgb(156, 154, 154);
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    margin: 12.5px 200px 12.5px 200px;
+    text-align: justify;
+    padding: 7.5px 12.5px;
+    border-radius: 9px 25px;
+    opacity: 0.8;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+#Title img {
+    width: 30px;
+    height: 30px;
+    padding-left: 9px;
+    padding-top: 7.5px;
+}
+
+.Background {
+    background-image: url('photo1.jpg');
+    width: 1170px;
+    height: 1331px;
+}
+
+nav p a {
+    text-decoration: none;
+}
+
+#Services {
+    align-content: center;
+    text-align: justify;
+    border-style: solid;
+    border-radius: 25px 7.5px;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 12.5px;
+    font-family: 'Pangolin', cursive;
+    background-color: rgb(192, 188, 188);
+    opacity: 0.8;
+}
+
+#Label {
+    margin-left: 380px;
+    font-size: 12.5px;
+    font-family: 'Pangolin', cursive;
+}
+
+#INPUT {
+    margin-right: 200px;
+}
+
+#Patient {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 5px 10px;
+    font-size: 7.5px;
+}
+
+#Name {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 5px 10px;
+    font-size: 7.5px;
+}
+
+#Contact {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 5px 10px;
+    font-size: 7.5px;
+}
+
+#Address {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 8px 15px;
+    font-size: 7.5px;
+}
+
+#SUBMIT {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 5px 5px;
+    font-size: 7.5px;
+    margin-left: 260px;
+}
+
+#RESET {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(26, 24, 24);
+    padding: 5px 5px;
+    font-size: 7.5px;
+
+}
+
+#BACKIMAGE {
+    background-image: url('Contact.jpg');
+    width: 754px;
+    height: 500px;
+}
+
+#Zumba {
+    border-radius: 10px;
+    margin-bottom: 4px;
+}

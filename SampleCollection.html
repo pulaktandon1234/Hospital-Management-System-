@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone11.css">
+    <title>Sample Collection Details</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+
+        #Save input {
+            font-size: 32px;
+            height: 50px;
+            width: 350px;
+            border-radius: 10px;
+            margin-left: 600px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(136, 212, 146);
+        }
+
+        #Clear input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 850px;
+
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(136, 212, 146);
+        }
+
+        #Sample input,
+        #Patient input,
+        #MLTId input,
+        #Test input,
+        #SampleId input,
+        #Amount input,
+        #DelieveryDate input,
+        #SampleType input,
+        #Name input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+        }
+
+        #Sample,
+        #Patient,
+        #MLTId,
+        #Test,
+        #SampleId,
+        #Amount,
+        #DelieveryDate,
+        #SampleType,
+        #Name {
+            font-family: sans-serif;
+            font-size: 24px;
+            margin-left: 15px;
+        }
+
+        #Patient input {
+            margin-left: 8px;
+        }
+
+        #Name input {
+            margin-left: 10px;
+        }
+
+        #MLTId input {
+            margin-left: 8px;
+        }
+
+        #Test input {
+            margin-left: 5px;
+        }
+        #Amount input
+        {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js">
+        <h1 style="text-align: center; justify-content: center; align-content: center; font-size: 32px;">Sample
+            Collection Details</h1>
+        <hr>
+        <br>
+        <label for="Sample" id="Sample">Sample Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Sample" placeholder="Eg. YT34Y5">
+        </label>
+        <label for="Save" id="Save">
+            <input type="submit" name="Save" value="Save and Print Invoice">
+        </label>
+        <br><br>
+        <label for="Patient" id="Patient">Patient Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Patient" placeholder="Eg. YT34Y5">
+        </label>
+
+        <br><br>
+
+        <label for="Name" id="Name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Name" placeholder="Eg. pulak">
+        </label>
+        <label for="Clear" id="Clear">
+            <input type="reset" name="Clear" value="Clear">
+        </label>
+        <br><br>
+        <label for="MLTId" id="MLTId">MLTId &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="MLTId" placeholder="Eg. YT34Y5">
+        </label>
+        <br><br><label for="Test" id="Test">Test Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="Test" id="">
+                <option value="Blood">Blood</option>
+                <option value="Urine">Urine</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="SampleType" id="SampleType">Sample Type&nbsp;&nbsp;&nbsp;
+            <select name="SampleType" id="">
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="Amount" id="Amount">Amount
+            <input type="number" name="Amount" placeholder="2000">
+        </label>
+        <br><br>
+        <label for="DelieveryDate" id="DelieveryDate">Delievery Date
+            <input type="date" name="DelieveryDate">
+        </label>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone4.css">
+    <title>Employee Details</title>
+    <style>
+       
+
+        #heading {
+            text-align: center;
+            font-size: 36px;
+        }
+
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #addsubmit input {
+
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102);
+        }
+
+        #CLEAR input {
+            padding-top: 0px;
+            margin-top: 10px;
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 70px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color:rgb(86, 206, 102);
+        }
+
+        #FirstName,
+        #LastName,
+        #EmployeeId,
+        #Designation,
+        #Qualification,
+        #NIC,
+        #Address,
+        #Contact,
+        #JoinedDate {
+            font-size: 20px;
+            margin: 22px;
+        }
+
+        #Address input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: white;
+        }
+
+        #Qualification input {
+            padding-left: 10px;
+            height: 30px;
+            width: 300px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: white;
+        }
+
+        #LastName input {
+            padding-left: 10px;
+            width: 300px;
+            height:30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: white;
+        }
+
+        #FirstName input,
+        #EmployeeId input,
+        #Designation input,
+        #NIC input,
+        #Contact input,
+        #JoinedDate input {
+
+            padding-left: 10px;
+            width: 180px;
+            height: 30px;
+            justify-content: center;
+            border-color: white;
+            border-width: none;
+            align-content: center;
+            text-align: center;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="heading">ADD EMPLOYEE DETAILS</h2>
+    <hr style="color: rgb(116, 103, 103)">
+    <br>
+    <form class="Employee" action="Save.js">
+
+        <label for="EmployeeId" id="EmployeeId">
+            Employee Id &nbsp;&nbsp;&nbsp;<input type="text" placeholder="Eg. 'E12Y3'" name="EmployeeId">
+
+        </label>
+        <label for="ADD" id="addsubmit">
+            <input type="submit" name="ADD" value="ADD">
+        </label>
+        <br><br>
+        <label for="CLEAR" id="CLEAR">
+            <input type="reset" value="CLEAR">
+        </label>
+        <br>
+        <label for="FirstName" id="FirstName">
+            First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Eg. 'Ajay'" name="FirstName">
+        </label>
+        <label for="LastName" id="LastName">
+            Last Name&nbsp;&nbsp;<input type="text" placeholder="Eg. 'Mehrotra'" name="LastName">
+        </label>
+        <br><br>
+        <label for="Designation" id="Designation"> Designation&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option id="Manager">Manager</option>
+                <option id="SeniorDoctor">Senior Doctor</option>
+                <otion id="JuniorDoctor">Junior Doctor</otion>
+            </select>
+        </label>
+        
+        <br><br>
+        <label for="Qualification" id="Qualification">Qualification&nbsp;&nbsp;
+            <input type="text" placeholder=" Eg. 'Senior Doctor'" name="Qualification">
+        </label>
+        <br><br>
+        <label for=" NIC"
+            id="NIC">NIC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="NIC" placeholder="National Informatics Centre">
+        </label>
+        <br><br>
+        <label for="Address" id="Address">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Address" placeholder="Eg. '18,Bara Bazar, Bareilly'">
+        </label>
+        <br><br>
+        <label for="Contact" id="Contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" name="Contact" placeholder="Eg. '9876543210'">
+        </label>
+        <br><br>
+        <label for="JoinedDate" id="JoinedDate">Joined Date&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="JoinedDate" placeholder="Eg. '26 August 2018'">
+        </label>
+        <br>
+    </form>
+</body>
+
+</html>

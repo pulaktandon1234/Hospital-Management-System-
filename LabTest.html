@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone5.css">
+    <title>Lab Test</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+            justify-content: center;
+        }
+
+        #Save input {
+            font-size: 32px;
+            height: 50px;
+            width: 220px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #Clear input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 130px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        #TestId input,
+        #SampleId input,
+        #PatientId input,
+        #MLTId input,
+        #Name input,
+        #TestType input,
+        #Deliever input 
+       {
+            padding-left: 10px;
+            width: 180px;
+            height: 30px;
+            justify-content: center;
+            border-color: white;
+            border-width: none;
+            align-content: center;
+            text-align: center;
+            outline: none;
+        }
+        #Results input,#Remarks input{
+            width: 300px;
+            height: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js">
+        <h1 id="heading">Lab Test Results Entry Form</h1>
+        <hr><br>
+        <label for="TestId" id="TestId">Test_Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="TestId" placeholder="Eg. PU77TR">
+        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="SampleId" id="SampleId">Sample_Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="SampleId" placeholder="Eg. TU77TA">
+        </label>
+        <label for="Save" id="Save">
+            <input type="submit" name="Save" value="Save Results">
+        </label>
+        <br><br>
+        <label for="PatientId" id="PatientId">PatientId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="PatientId" placeholder="Eg. WEB654">
+        </label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="MLTId" id="MLTId">MLT_Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="MLTId" placeholder="Eg. BV72WE">
+        </label>
+        <br>
+        <hr>
+        <label for="Name" id="Name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Name" placeholder="Eg. Karan">
+        </label>
+        <label for="Clear" id="Clear">
+            <input type="reset" value="Clear">
+        </label>
+        <br><br>
+        <label for="TestType" id="TestType">Test_type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="TestType">
+        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="Deliever" id="Deliever">Deliever Date&nbsp;&nbsp;
+            <input type="date" name="Deliever">
+        </label>
+        <br><br>
+        <label for="Results" id="Results">Results
+            <br>
+            <input type="text" name="Results">
+        </label>
+        <br><br>
+        <label for="Remarks" id="Remarks">Remarks/Conclusion/Complication
+            <br>
+            <input type="text" name="Remarks">
+        </label>
+    </form>
+</body>
+
+</html>

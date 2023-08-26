@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone9.css">
+    <title>Payroll form</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+            justify-content: center;
+        }
+
+        #ADD input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 850px;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(136, 212, 146);
+        }
+
+        #EmployeeId input,
+        #Name input,
+        #JobTitle input,
+        #Salary input,
+        #Amount input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+
+        #EmployeeId,
+        #Name,
+        #JobTitle,
+        #Salary,
+        #Amount {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            border-style: solid;
+            border-width: 2px;
+            margin-left: 50px;
+        }
+
+        td {
+            height: 100px;
+        }
+
+        td,
+        th {
+            border: 1px solid #56a1c4;
+            text-align: left;
+            padding: 8px;
+            border-style: solid;
+            border-width: 2px;
+            padding-left: 75px;
+            padding-right: 75px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            text-align: center;
+
+        }
+        
+        th {
+            background-color: deepskyblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js" class="Payroll">
+        <h1 id="heading">Employee Paroll Form</h1>
+        <hr>
+        <br>
+        <label for="EmployeeId" id="EmployeeId">Employee Id&nbsp;&nbsp;&nbsp;
+            <input type="text" name="EmployeeId" placeholder="Eg. EY66UU">
+        </label>
+        <br><br>
+        <label for="Name"
+            id="Name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Name" placeholder="Eg. Mohit Tyagi">
+        </label>
+        <label for="JobTitle" id="JobTitle">JobTitle&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="JobTitle" placeholder="Eg. Junior Doctor">
+        </label>
+        <br><br>
+        <label for="Salary" id="Salary">Salary Type&nbsp;&nbsp;&nbsp;
+            <select>
+                <option>Basic Type</option>
+                <option>Dearness Allowance </option>
+                <option>HRA Allowance</option>
+            </select>
+        </label>
+        <label for="Amount" id="Amount">Amount&nbsp;&nbsp;&nbsp;
+            <input type="number" name="Amount" placeholder="Eg. 2000">
+        </label>
+        <label for="Salary" id="Salary">DR/CR
+            <select>
+                <option>DR</option>
+                <option>CR </option>
+
+            </select>
+        </label>
+        <br> <br>
+        <label for="ADD" id="ADD">
+            <input type="submit" name="ADD" value="ADD">
+        </label>
+        <br><br>
+
+        <div id="section">
+            <table>
+                <tr>
+                    <th id="section1">Salary Type</th>
+                    <th id="section2">Description</th>
+                    <th id="section3">Amount</th>
+                    <th id="section4">DR/CR</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

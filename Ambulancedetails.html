@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone2.css">
+    <title>Ambulance Details</title>
+    <style>
+        .heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+            justify-content: center;
+        }
+
+        #SAVE input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #CLEAR input {
+            padding-top: 0px;
+            margin-top: 10px;
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 70px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+
+        #VehicleNo,
+        #VehicleModel,
+        #DateObtained,
+        #Message,
+        #DriverId,
+        #Features,
+        #Features input {
+            margin-left: 20px;
+        }
+
+        #Messagebox input {
+            margin-left: 80px;
+            width: 400px;
+            height: 100px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+
+        #VehicleNo input,
+        #VehicleModel input,
+        #DateObtained input,
+
+        #DriverId input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js" class="Ambulance">
+        <h1 class="heading">Ambulance Details</h1>
+
+        <hr>
+        <label for="VehicleNo" id="VehicleNo">Vehicle No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="VehicleNo" placeholder="Eg. UP25 AE 1561">
+        </label>
+        <label for="SAVE" id="SAVE">
+            <input type="submit" name="SAVE" value="SAVE">
+        </label>
+        <br><br>
+        <label for="VehicleModel" id="VehicleModel">Vehicle Model&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" name="VehicleModel" placeholder="Eg. 2011">
+        </label>
+        <label for="CLEAR" id="CLEAR">
+            <input type="reset" name="CLEAR" value="CLEAR">
+        </label>
+        <br><br>
+        <label for="DateObtained" id="DateObtained">Date Obtained&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option>Emergency patient taking</option>
+                <option>Shifting patient to other hospital</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="Features" id="Features">Features<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Temperature Control/Air Filter
+            <input type="checkbox">Vitals Monitor
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="checkbox">Ventilator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox">Two Way Radio
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Others
+
+        </label>
+        <br><br>
+        <label for="Message" id="Messagebox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Message">
+        </label>
+        <br><br>
+        <label for="DriverId" id="DriverId">Driver Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="DriverId" placeholder="Eg. JKHF54RY1">
+        </label>
+        <br><br>
+
+    </form>
+</body>
+
+</html>

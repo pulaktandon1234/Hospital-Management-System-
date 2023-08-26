@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone13.css">
+    <title>Zumba Details</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+            justify-content: center;
+        }
+
+        #ADD input {
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #CLEAR input {
+            padding-top: 0px;
+            margin-top: 10px;
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 70px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #MemberId input,
+        #FirstName input,
+        #NIC input,
+        #Age input,
+        #Address input,
+        #ContactId input,
+        #JoinedDate input,
+        #DC input {
+
+            margin-left: 10px;
+           
+            justify-content: center;
+            border-color: white;
+            border-width: none;
+            align-content: center;
+            text-align: center;
+            outline: none; width: 180px;
+            height: 30px;
+        }
+        #LastName input{
+            margin-left: 10px;
+            justify-content: center;
+            border-color: white;
+            border-width: none;
+            align-content: center;
+            text-align: center;
+            outline: none; width: 180px;
+            height: 30px;
+        }
+        #MemberId,
+        #FirstName,
+        #LastName,
+        #NIC,
+        #Age,
+        #Address,
+        #ContactId,
+        #JoinedDate,
+        #DC,
+        #Gender {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Submit.js">
+        <h1 id="heading">Add Zumba Member Details</h1>
+        <hr>
+        <label for="MemberId" id="MemberId">Member
+            Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="MemberId" placeholder="Eg. Y55RTY">
+        </label>
+        <br><br>
+        <label for="FirstName" id="FirstName">First
+            Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="FirstName" placeholder="Eg. Mohit">
+        </label>
+        <label for="LastName" id="LastName">Last
+            Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="LastName" placeholder="Eg. Agarwal">
+        </label>
+        <label for="ADD" id="ADD">
+            <input type="submit" name="ADD" value="ADD">
+        </label>
+        <br><br>
+        <label for="CLEAR" id="CLEAR">
+            <input type="reset" name="CLEAR" value="CLEAR">
+        </label>
+        <br><br>
+        <label for="Age"
+            id="Age">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Age" placeholder="Eg. 23">
+        </label>
+        <br><br>
+        
+        <label for="Gender"
+            id="Gender">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="NIC"
+            id="NIC">NIC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="NIC" placeholder="">
+        </label>
+        <br><br>
+        <label for="Address"
+            id="Address">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Address" placeholder="Eg. Bara Bazar, Rampur">
+        </label>
+        <br><br>
+        <label for="ContactId" id="ContactId">Contact
+            Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" name="ContactId" placeholder="Eg. 9876543021">
+        </label>
+        <br><br>
+        <label for="JoinedDate" id="JoinedDate">Joined
+            Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="JoinedDate" placeholder="Eg. 23 July 2009">
+        </label>
+        <br><br>
+        <label for="Disabilities/Conditions" id="DC">Disabilities/Conditions&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Disabilities/Conditions" placeholder="">
+        </label>
+    </form>
+</body>
+
+</html>

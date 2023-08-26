@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone3.css">
+    <title>Emergency Treatment Details</title>
+    <style>
+        body {
+            background-color: rgba(221, 218, 218, 0.89);
+        }
+
+        #heading {
+            text-align: center;
+            font-style: normal;
+            font-size: 35px;
+        }
+
+        #SAVE input {
+
+            font-size: 32px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #CLEAR input {
+            padding-top: 0px;
+            margin-top: 10px;
+            font-size: 32px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 70px;
+            cursor: pointer;
+            outline: none;
+            border-color: black;
+            background-color: rgb(86, 206, 102);
+        }
+
+        #PatientId input,
+        #Date input,
+        #NurseId input {
+            padding-left: 10px;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            outline: none;
+            border-color: rgba(202, 186, 186, 0.699);
+        }
+
+        #PatientId,
+        #Date,
+        #NurseId {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+
+        #Transfers {
+            height: 15px;
+            width: 50px;
+            padding-left: 50px;
+        }
+
+        #Blood,
+        #Wound,
+        #Saline,
+        #ECG {
+            list-style-type: none;
+            display: inline;
+            border-style: solid;
+            background-color: deepskyblue;
+            padding: 8px;
+            border-style: solid;
+            border-width: 2px;
+            padding-left: 75px;
+            padding-right: 75px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-collapse: collapse;
+
+        }
+
+        #box {
+            border-width: 3px;
+            border-style: solid;
+            border-color: rgba(173, 167, 167, 0.89);
+            width: 900px;
+            height: 300px;
+        }
+
+        #Blood:hover,
+        #Wound:hover,
+        #Saline:hover,
+        #ECG:hover {
+            padding-left: 78px;
+            padding-right: 78px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }
+        #DressingType,#Stiching,#Particle{
+            padding-left: 78px;
+        }
+        #Remarks input{
+            width: 200px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="EmergencyTreatment" action="Submit.js">
+        <h1 id="heading">Add Emergency Treatment</h1>
+        <hr>
+        <label for="PatientId" id="PatientId">Patient Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="PatientId" placeholder="Eg. E8Y7T4">
+        </label>
+        <label for="SAVE" id="SAVE">
+            <input type="submit" name="SAVE" value="SAVE AND PRINT INVOICE">
+        </label>
+        <br><br>
+
+        <label for="Date" id="Date">Date/ Time&nbsp;&nbsp;&nbsp;
+            <input type="datetime" name="PatientId" placeholder="Eg. 28 August 2020 3:20PM">
+        </label>
+        <label for="CLEAR" id="CLEAR">
+            <input type="reset" name="CLEAR" value="CLEAR">
+        </label>
+        <br><br>
+        <label for="NurseId" id="NurseId">Nurse Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="NurseId" placeholder="Eg. UY66YR">
+        </label>
+        <br><BR>
+        <div id="box">
+
+            <ul>
+                <li id="Blood">Blood</li>
+                <li id="Wound">Wound Dressing</li>
+                <li id="Saline">Saline</li>
+                <li id="ECG">ECG</li>
+            </ul>
+            <label for="DressingType" id="DressingType">Dressing Type&nbsp;&nbsp;
+               <select>
+                   <option value="green cloth">green cloth</option>
+                   <option value="blue cloth">blue cloth</option>
+               </select>
+            </label>
+            <br><br>
+            <label for="Stiching" id="Stiching">
+                <input type="checkbox" name="Stiching">Stiching
+            </label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="Remarks">Remarks&nbsp;&nbsp;
+                <input type="text" name="Remarks">
+            </label>
+            <br><br>
+            <label for="Particle" id="Particle">Particle Removal&nbsp;&nbsp;
+                <input type="text">
+            </label>
+        </div>
+        <br><br>
+        <label for="Transfers" id="Transfers">
+            <select>
+                <option>Transfers</option>
+                <option>Drop Patient to Hospital</option>
+            </select>
+        </label>
+    </form>
+</body>
+
+</html>
